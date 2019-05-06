@@ -4,5 +4,6 @@ if [ $(uname) == Linux ]; then
 fi
 
 autoconf
-./configure --disable-static --disable-udev --prefix=$PREFIX
+# ./configure --disable-static --disable-udev --prefix=$PREFIX
+./configure --disable-static --prefix=$PREFIX
 make install
